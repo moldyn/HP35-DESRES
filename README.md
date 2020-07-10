@@ -12,6 +12,10 @@ $ bunzip2 -k traj.dat.bz2
 
 ```
 
+The columns corresponds to
+
+<img src="https://latex.codecogs.com/svg.latex?\phi_2\;\psi_2\;\phi_3\;\psi_3\;\ldots\;\phi_{33}\;\psi_{33}\;\phi_{34}\;\psi_{34}" title="columns content" />
+
 
 ## Citations
 Please cite following article:
