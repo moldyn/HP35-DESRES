@@ -1,6 +1,8 @@
 ## HP35-DESRES
 The time series of backbone dihedral angles of of Nle/Nle mutant of villin headpiece (HP35), generated from a 300μs long molecular dynamics simulation (Amber99SB-ILDN) at 360K.
 
+> **DEPENDENCY**: [git-lfs](https://git-lfs.github.com) is needed for large file support
+
 Quick-start:
 ``` 
 $ git clone https://github.com/moldyn/HP35-DESRES.git
