@@ -1,0 +1,42 @@
+cff-version: 1.2.0
+title: HP35-DESRES
+message: >-
+  If you use this dataset, please cite it using the metadata
+  from this file.
+type: dataset
+authors:
+  - given-names: Stefano
+    family-names: Piana
+    email: Stefano.Piana-Agostinetti@DEShawResearch.com
+    affiliation: 'D. E. Shaw Research, New York, NY 10036'
+  - email: Kresten.Lindorff-Larsen@DEShawResearch.com
+    given-names: Kresten
+    family-names: Lindorff-Larsen
+    affiliation: 'D. E. Shaw Research, New York, NY 10036'
+  - given-names: David E.
+    family-names: Shaw
+    email: David.Shaw@DEShawResearch.com
+    affiliation: >-
+      Center for Computational Biology and Bioinformatics,
+      Columbia University, New York, NY 10032
+identifiers:
+  - type: doi
+    value: 10.1073/pnas.1201811109
+preferred-citation:
+  type: article
+  title: "Protein folding kinetics and thermodynamics from atomistic simulation"
+  authors:
+  - given-names: Stefano
+    family-names: Piana
+  - given-names: Kresten
+    family-names: Lindorff-Larsen
+  - given-names: David E.
+    family-names: Shaw
+  doi: "10.1073/pnas.1201811109"
+  journal: "Proc. Natl. Acad. Sci. USA"
+  month: 10
+  start: 17845
+  end: 17850
+  issue: 44
+  volume: 109
+  year: 2012
