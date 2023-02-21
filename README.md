@@ -16,7 +16,7 @@ bunzip2 -k hp35.dihs.bz2
 
 The columns corresponds to
 
-<img src="http://www.sciweavers.org/tex2img.php?eq=%5Cphi_2%5C%3B%5Cpsi_2%5C%3B%5Cphi_3%5C%3B%5Cpsi_3%5C%3B%5Cldots%5C%3B%5Cphi_%7B33%7D%5C%3B%5Cpsi_%7B33%7D%5C%3B%5Cphi_%7B34%7D%5C%3B%5Cpsi_%7B34%7D&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0" align="center" border="0" alt="\phi_2\;\psi_2\;\phi_3\;\psi_3\;\ldots\;\phi_{33}\;\psi_{33}\;\phi_{34}\;\psi_{34}" width="260" height="19" />
+$$ \phi_2~\psi_2~\phi_3~\psi_3~\ldots~\phi_{33} ~\psi_{33} ~\phi_{34} ~\psi_{34} $$
 
 ## Citations
 Please cite following article:
