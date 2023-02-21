@@ -5,12 +5,12 @@ The time series of backbone dihedral angles of of Nle/Nle mutant of villin headp
 
 Quick-start:
 ``` 
-$ git clone https://github.com/moldyn/HP35-DESRES.git
-$ cd HP35-DESRES
+git clone https://github.com/moldyn/HP35-DESRES.git
+cd HP35-DESRES
 # check if corrupt
-$ bunzip2 -t traj.dat.bz2 &>/dev/null || echo "file corrupt, please download again."
+bunzip2 -t hp35.dihs.bz2 &>/dev/null || echo "file corrupt, please download again."
 # unzip
-$ bunzip2 -k traj.dat.bz2
+bunzip2 -k hp35.dihs.bz2
 
 ```
 
