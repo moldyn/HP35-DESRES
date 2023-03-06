@@ -7,6 +7,7 @@ the license carefully before use.
 
 1. `hp35.dihs`: backbone dihedral angels given [degrees]
 1. `hp35.dihs.shifted`: maximum-gap shifted backbone dihedral angels [rad]
+1. `hp35.crystaldists`: the atom distances of all contacts occurring in the crystal structure 2f4k [nm]
 1. `hp35.mindists`: all minimal distances occurring more frequently than 30% [nm]
 1. `hp35.mindists2`: improved distances definition with all atom pairwise distances occurring more frequently than 30% [nm]
 
