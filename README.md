@@ -1,22 +1,62 @@
-## HP35-DESRES
-The time series of backbone dihedral angles of of Nle/Nle mutant of villin headpiece (HP35), generated from a 300μs long molecular dynamics simulation (Amber99SB-ILDN) at 360K. Please read the license carefully before usage.
-
+# HP35-DESRES
+The time series of three different internal coordinate representations of the
+Nle/Nle mutant ofthe villin headpiece (HP35), generated from a 300μs long
+molecular dynamics simulation (Amber99SB-ILDN) at 360K, are given. Please read
+the license carefully before use.
 > **DEPENDENCY**: [git-lfs](https://git-lfs.github.com) is needed for large file support
 
-Quick-start:
-``` 
-git clone https://github.com/moldyn/HP35-DESRES.git
-cd HP35-DESRES
-# check if corrupt
-bunzip2 -t hp35.dihs.bz2 &>/dev/null || echo "file corrupt, please download again."
-# unzip
-bunzip2 -k hp35.dihs.bz2
+1. `hp35.dihs`: backbone dihedral angels given [degrees]
+1. `hp35.dihs.shifted`: maximum-gap shifted backbone dihedral angels [rad]
+1. `hp35.mindists`: all minimal distances occurring more frequently than 30% [nm]
+1. `hp35.mindists2`: improved distances definition with all atom pairwise distances occurring more frequently than 30% [nm]
 
-```
+## Backbone Dihedral Angles
+The time series of all backbone dihedral angles from residue 2 to residue 34
+are given in the file `hp35.dihs` (in degrees !), while in `hp35.dihs.shifted`
+the maximal gap shifting method
+([Sittel et al. 2017](https://doi.org/10.1063/1.4998259)) was applied to allow
+non-periodic treatment of the angles.
 
 The columns corresponds to
 
 $$ \phi_2~\psi_2~\phi_3~\psi_3~\ldots~\phi_{33} ~\psi_{33} ~\phi_{34} ~\psi_{34} $$
+
+which can be also found in the file `hp35.dihs.names`.
+
+## Contact Distances
+The time series of all minimal distances $d_{ij}$ using the following two
+different approaches suggested by [Nagel et al.
+2023](https://doi.org/xx.xxxx/x.xxxxxxx). For `hp35.mindists` the distance
+between the residues $i$ and $j$ is given by the minimal distance of the heavy
+atoms $n\in i$, $m\in j$, so
+
+$$ d_{ij}(t) = \min_{n,m} |\mathbf{r}_{i, n}(t) - \mathbf{r}_{i, n}(t)| $$
+
+and a contact distance must be below $0.45\:\text{nm}$
+with probability $P_{ij}\ge 0.3$.
+
+The second definition, used in `hp35.mindists2`, takes the minimum only over
+all atomic distances $n$, $m$ which are formed more frequent than $0.3$, so
+
+$$ d_{ij}(t) = \min_{P_{n,m}\ge 0.3} |\mathbf{r}_{i, n}(t) - \mathbf{r}_{i,n}(t)|\;.$$
+
+The indices corresponding to each column can be found in `hp35.mindists.ndx`
+and `hp35.mindists2.ndx`, respectively.
+
+## Getting-Started
+Quick-start to check and unzip all datasets: 
+``` 
+git clone https://github.com/moldyn/HP35-DESRES.git
+cd HP35-DESRES
+# check if corrupt
+for data in hp35.*.bz2; do
+  bunzip2 -t $data &>/dev/null || echo "file $data corrupt, please download again."
+done
+# unzip all
+for data in hp35.*.bz2; do
+  bunzip2 -k $data
+done
+```
 
 ## Citations
 Please cite following article:
