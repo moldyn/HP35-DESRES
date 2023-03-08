@@ -9,7 +9,7 @@ Using any file from this repository, please cite the following article:
 
 ## Provided Data
 The time series of three different internal coordinate representations of the
-Nle/Nle mutant ofthe villin headpiece (HP35), generated from a 300μs long
+Nle/Nle mutant of the villin headpiece (HP35), generated from a 300μs long
 molecular dynamics simulation (Amber99SB-ILDN) at 360K, are given. Please read
 the license carefully before use.
 > **DEPENDENCY**: [git-lfs](https://git-lfs.github.com) is needed for large file support
@@ -27,7 +27,7 @@ the maximal gap shifting method
 ([Sittel et al. 2017](https://doi.org/10.1063/1.4998259)) was applied to allow
 non-periodic treatment of the angles.
 
-The columns corresponds to
+The columns correspond to
 
 $$ \phi_2~\psi_2~\phi_3~\psi_3~\ldots~\phi_{33} ~\psi_{33} ~\phi_{34} ~\psi_{34} $$
 
