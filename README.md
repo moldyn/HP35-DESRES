@@ -40,7 +40,7 @@ different approaches suggested by [Nagel et al.
 distance between the residues $i$ and $j$ is given by the minimal distance of
 the heavy atoms $n\in i$, $m\in j$, so
 
-$$ d_{ij}(t) = \min_{n,m} |\mathbf{r}_{i, n}(t) - \mathbf{r}_{i, n}(t)| $$
+$$ d_{ij}(t) = \min_{n,m} |\mathbf{r}_ {i, n}(t) - \mathbf{r}_ {i, n}(t)| $$
 
 and a contact distance must be below $0.45\:\text{nm}$
 with probability $P_{ij}\ge 0.3$.
@@ -48,7 +48,7 @@ with probability $P_{ij}\ge 0.3$.
 The second definition, used in `hp35.mindists2`, takes the minimum only over
 all atomic distances $n$, $m$ which are formed more frequent than $0.3$, so
 
-$$ d_{ij}(t) = \min_{P_{n,m}\ge 0.3} |\mathbf{r}_{i, n}(t) - \mathbf{r}_{i,n}(t)|\;.$$
+$$ d_{ij}(t) = \min_{P_{n,m}\ge 0.3} |\mathbf{r}_ {i, n}(t) - \mathbf{r}_ {i,n}(t)|\;.$$
 
 The indices corresponding to each column can be found in `hp35.mindists.ndx`
 and `hp35.mindists2.ndx`, respectively.
